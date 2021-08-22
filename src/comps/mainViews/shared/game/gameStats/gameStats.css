@@ -1,0 +1,232 @@
+.gamestats-fr {
+  width: 0;
+  height: 0;
+  display: flex;
+  position: fixed;
+  bottom: 12px;
+  right: 66px;
+  align-items: stretch;
+}
+@media screen and (min-width: 1366px) {
+  .brd-gameinfo-fr.isnotfixed .gamestats-fr {
+    flex-direction: row-reverse;
+  }  
+}
+
+@media screen and (max-width: 1365px) {
+  .brd-gameinfo-fr.isnotfixed .gamestats-fr {
+    flex-direction: column-reverse;
+  }  
+}
+
+.brd-gameinfo-fr.isfixed .gamestats-fr {
+  
+}
+
+.gamestats-fr .icon-tactics {
+  fill: var(--play-col-maincol2);
+  width: 2em;
+  height: 2em;
+}
+
+.gamestats-fr thead tr th {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.25em;
+  padding-top: 0.5em;
+  background-color: var(--play-col-mainbg3);
+}
+
+/* @media screen and (min-width: 512px) { */
+  .gamestats-fr tr td {
+    min-width: 3.5em;
+    padding: 0.125em 0.25em;
+  }  
+/* } */
+
+
+.gamestats-fr tr.tr1 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.gamestats-fr tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.brd-gameinfo-fr.isfixed.isopen .gamestats-fr {
+  width: auto;
+  height: auto;
+}
+
+.brd-gameinfo-fr.isnotfixed .gamestats-fr {
+  position: relative;
+  width: auto;
+  height: auto;
+  bottom: unset;
+  right: unset;
+}
+
+.gamestats-col {
+  width: 16px;
+  height: 16px;  color: var(--play-col-mainbg2);
+}
+
+td.gamestats-icon-fr .icon-actionneeded, td.gamestats-icon-fr .icon-check, td.gamestats-icon-fr .icon-minuscircle {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.gamestats-td-units.ispos {
+  color: green;
+}
+
+.gamestats-td-units.isneg {
+  color: red;
+}
+
+.gamestats-listbtn {
+  background-color: var(--play-col-mainbg2);
+  width: 100%;
+  color: var(--play-col-maincol1);
+  transition: 0.7s background-color;
+  outline: 1px solid var(--play-col-btn1);
+  margin-bottom: 0.125em;
+  max-height: 28px;
+  font-family: 'Noto Serif';
+  min-width: 6em;
+}
+
+@media screen and (min-width: 512px) {
+  .gamestats-listbtn {
+    min-width: 11em;
+  }
+}
+
+
+.gamestats-listbtn:hover, .gamestats-listbtn:focus {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg2);
+  width: 100%;
+  outline: 1px solid var(--play-col-mainbg2);
+}
+
+.gamestats-listbtn.isactive {
+  background-color: var(--play-col-maincol2);
+  color: var(--play-col-mainbg1);
+}
+
+.brd-gameinfo-fr .gamestats-playerdetails-tbl {
+  background-color: var(--play-col-mainbg1);
+  position: absolute;
+    z-index: 3;
+    left: 11em;
+    height: auto;
+}
+
+/* @media screen and (min-width: 512px) { */
+  .brd-gameinfo-fr .gamestats-playerdetails-tbl {
+    width: calc(100% - 6em);
+    max-width: 21em;
+    left: 6em;
+    top: 0px;
+  }
+/* } */
+
+@media screen and (min-width: 512px) {
+  .brd-gameinfo-fr .gamestats-playerdetails-tbl {
+    width: calc(100% - 11.25em);
+    max-width: 21em;
+    left: 11em;
+  }
+ }
+
+.brd-gameinfo-fr .gamestats-playerdetails-tbl {
+  margin-right: 0.25em;
+}
+
+@media screen and (min-width: 1366px) {
+  .brd-gameinfo-fr.isnotfixed .gamestats-playerdetails-tbl {
+    margin-left: 0.25em;
+  } 
+}
+
+.gamestats-playerdetails-hdr {
+  font-size: 1em;
+}
+
+
+.gamestats-fr .gamestats-playerdetails-tbl tr th {
+  padding-bottom: 6px;
+}
+
+.gamestats-playerdetails-tbl tr td {
+  text-align: center;
+  height: 32px;
+  max-height: 32px;
+}
+
+.gamestats-playerdetails-tbl tr th {
+  text-align: center;
+  height: 38px;
+}
+
+.gamestats-playerdetails-tbl tr.tr1 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.gamestats-playerdetails-tbl tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.gamestats-playerslist-tbl tr.isbold {
+  font-weight: 800;
+}
+
+.gamestats-playerslist-tbl {
+  background-color: var(--play-col-mainbg1);
+  text-align: center;
+  width: 100%;
+}
+
+.gamestats-playerdetails-tbl tr th span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loader-fr {
+  width: 78px;
+}
+
+.loader-fr .loader {
+  margin: 0 auto;
+  transform: scale(0.25);
+  max-height: 28px;
+}
+
+.gamestats-dispplayers-btn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 512px) {
+  .gamestats-small-nodisp {
+    display: none;
+  }
+}
+
+.gamestats-fr thead tr th.gamestats-dispplayers-th {
+  background-color: var(--play-col-btn1);
+  transition: 0.35s background-color;
+}
+
+.gamestats-fr thead tr th.gamestats-dispplayers-th:hover {
+  background-color: var(--play-col-sig1);
+}
+
+.gamestats-fr thead tr th.gamestats-dispplayers-th:hover svg {
+  fill: var(--play-col-mainbg3);
+}

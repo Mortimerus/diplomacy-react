@@ -1,0 +1,52 @@
+.btn-futureorders {
+  position: absolute;
+  top: 7px;
+  left: 104px;
+}
+
+.btn-futureorders.isfixed {
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (min-height: 768px) {
+  .btn-futureorders.isfixed {
+    top: 12px;
+  }
+}
+
+@media screen and (min-height: 768px) {
+  .btn-futureorders {
+    top: 12px;
+    left: 113px;
+  }
+}
+
+.btn-futureorders.issolo {
+  left: 8px;
+}
+
+.btn-futureorders {
+  background-color: transparent;
+}
+
+.btn-futureorders.isactive {
+  background-color: transparent;
+}
+
+.icon-futureorders-fr {
+  width: 2em;
+  height: 2em;
+}
+
+.btn-futureorders.isactive .icon-futureorders-fr {
+  fill: var(--play-col-sig1)
+}
+
+.btn-futureorders .icon-futureorders-fr {
+  fill: var(--play-col-maincol2)
+}
+
+.flexframe.iscomm .btn-futureorders {
+  display: none;
+}

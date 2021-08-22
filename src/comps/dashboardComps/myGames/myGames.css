@@ -1,0 +1,150 @@
+.mygamesfr {
+  margin-top: 0.5em;
+}
+
+.tbl-mygames {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--play-col-mainbg1);
+}
+
+@media screen and (min-width: 768px) {
+  .tbl-mygames {
+    margin-top: 3em;
+  }
+}
+
+.tbl-mygames tr td {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.tbl-mygames tr.tr1 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.tbl-mygames tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.tbl-mygames caption {
+  text-align: left;
+}
+
+.tbl-mygames thead {
+  background-color: var(--play-col-mainbg3);
+}
+
+.tbl-mygames thead th {
+  padding: 0.5em;
+}
+
+.tbl-mygames button {
+  background-color: var(--play-col-btn1);
+  color: var(--play-col-maincol2);
+  font-family: 'Arial';
+  font-size: 1.125em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-bottom: 0.25em;
+  border-bottom: 0.25em solid var(--play-col-btn1);
+}
+
+.tbl-mygames button.isactive:hover, .tbl-mygames button:hover {
+  border-bottom: 0.25em solid var(--play-col-btn2);
+}
+
+.tbl-mygames button.isactive {
+  border-bottom: 0.25em solid var(--play-col-btn2);
+}
+
+.tbl-mygames-td-listlink {
+  transition-duration: 1s;
+}
+
+
+
+.tbl-mygames-td-listlink:hover {
+  background-color: var(--play-col-sig1);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.tbl-mygames-td-listlink:hover svg {
+  fill: var(--play-col-mainbg3);
+} 
+
+@media screen and (min-width: 768px) {
+  .tbl-mygames button {
+    min-width: 6em;
+  }
+  .tbl-mygames-td-listlink {
+    min-width: 4.5em;
+  }
+}
+
+.tbl-mygames-loader-fr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-height: 2em;
+    transform: scale(0.5);
+}
+
+.tbl-mygames-loader-fr .loader {
+ margin: 0;
+ padding: 0;
+}
+
+.tbl-mygames-loader-fr .loader:before, .tbl-mygames-loader-fr .loader:after {
+  height: 2em;
+  width: 1em;
+}
+
+.tbl-mygames-deadline {
+  width: 167.202px;
+}
+
+.mygames-emptylist-fr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .mygames-emptylist-fr {
+    margin-top: 3em;
+  }
+}
+
+.mygames-emtpylist-inner {
+  background-color: var(--play-col-mainbg2);
+  max-width: 33em;
+  padding: 0.5em;
+}
+
+.mygames-emptylist-msg {
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+
+
+@media screen and (max-width: 512px) {
+  .mygamesfr .nodispsmall {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mygamesfr svg {
+    height: 1.25em;
+    width: 1.25em;
+  }
+
+  .tbl-mygames tr td {
+    padding: 0.125em;
+    width: 9.6em;
+  }
+}

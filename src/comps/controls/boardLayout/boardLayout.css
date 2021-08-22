@@ -1,0 +1,72 @@
+.brdlayoutfr button {
+  background-color: transparent;
+
+}
+.brdlayoutfr button.btn-tmode {
+
+}
+
+.brdlayoutfr button svg {
+  fill: var(--play-col-maincol2);
+}
+
+.brdlayoutfr button.btn-tmode svg {
+  fill: var(--play-col-sig1);
+}
+
+.brdlayoutfr {
+  position: absolute;
+  right: 3em;
+  top: 7px;
+  display: flex;
+}
+
+.brdlayoutfr.brdlayout-fxd {
+  position: fixed;
+  top: 0px;
+}
+
+@media screen and (min-height: 768px) {
+  .gamectrls-fr .brdlayoutfr {
+    top: 13px;
+  }
+}
+
+
+@media screen and (orientation: portrait) {
+  .brdlayoutfr button.btn-globe.modefull {
+    display: none;
+  }  
+}
+/* ============ change to rem or 1400px / 87.5em em */
+/*
+@media screen and (orientation: landscape) and (max-width: 87.5em) {
+  .brdlayoutfr button.modedef {
+    display: none;
+  }  
+}
+*/
+
+@media screen and (max-width: 512px) {
+  .brdlayout-fullmode-home {
+    display: none;
+  }  
+}
+
+.brdlayout-fullmode-home {
+  color: var(--play-col-maincol2);
+  min-width: 3.5em;
+}
+
+.brdlayout-fullmode-home span {
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+.brdlayoutfr.brdlayout-fxd {
+  position: fixed;
+  right: 3em;
+  top: 13px;
+}
+*/

@@ -1,0 +1,52 @@
+.infobox {
+  margin: 0.25em;
+  border: 2px solid var(--play-col-btn1);
+}
+
+.infobox:hover, .infobox:focus {
+  border: 2px solid var(--play-col-sig1);
+}
+
+.infobox summary {
+  padding: 0.5em;
+  background-color: var(--play-col-mainbg2);
+  outline: 1px solid var(--play-col-btn1);
+  transition: 0.7s background-color;
+  opacity: 0.8;
+  font-size: 0.925rem;
+  font-style: italic;
+}
+
+.infobox summary:hover, .infobox summary:focus {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg2);
+  outline: 1px solid var(--play-col-sig1);
+}
+
+.infobox ul {
+  list-style: none;
+  position: relative;
+  background-color: var(--play-col-mainbg2);
+}
+
+.infobox ul li::before {
+  position: absolute;
+  left: 0.425em;
+  width: 0.425rem;
+  height: 0.625rem;
+  background-color: var(--play-col-maincol1);
+  content: "";
+  margin: 0.25rem;
+  opacity: 0.8;
+}
+
+.infobox ul li {
+  padding-left: 2.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-right: 0.5em;
+}
+
+.infobox ul li.li2 {
+  background-color: var(--play-col-mainbg3);
+}

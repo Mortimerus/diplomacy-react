@@ -1,0 +1,30 @@
+.btn-tmode {
+  background-color: transparent;
+  color: var(--play-col-maincol1);
+}
+
+.btn-tmode.disable svg.icon-now-fr, .btn-tmode.disable svg.icon-history-fr  {
+  fill: var(--play-col-maincol2);
+}
+
+.btn-tmode svg.icon-now-fr, .btn-tmode svg.icon-history-fr {
+  fill: var(--play-col-sig1);
+}
+
+.btn-fr-turnmode {
+  position: absolute;
+  top: 7px;
+  left: 0em;
+}
+
+.btn-fr-turnmode.isfixed {
+  position: fixed;
+  top: 0;
+}
+
+@media screen and (min-height: 768px) {
+  .gamectrls-fr .btn-fr-turnmode {
+    top: 12px;
+    left: 0.5em;
+  }
+}

@@ -1,0 +1,27 @@
+.tbl-users {
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--play-col-mainbg1);
+}
+
+.tbl-users tr td {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.tbl-users tr.tr1 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.tbl-users tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.tbl-users button {
+  background-color: var(--play-col-btn1);
+}
+
+.tbl-users button.isactive {
+  background-color: var(--play-col-btn2);
+}

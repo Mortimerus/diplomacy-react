@@ -1,0 +1,138 @@
+.gginfofr {
+  font-size: 1rem;
+}
+
+.gginfofr .gginfo-it-grp tr {
+  height: 30px;
+  text-align: center;
+}
+.gginfofr .gginfo-it-grp tr td {
+  padding: 0.125em 0.25em;
+}
+
+.gginfofr.gginfofxd {
+  position: fixed;
+  bottom: 12px;
+  right: 66px;
+  overflow: visible;
+  border-bottom: none;
+  background-color: var(--play-col-mainbg1);
+  height: 0px;
+  width: 0px;
+}
+
+.gginfofr.gginfofxd .gginfo-it-grp {
+  display: inline-block;
+  position: fixed;
+  bottom: 12px;
+  right: 66px;
+  width: 0px;
+  height: 0px;
+}
+
+.gginfo-it-grp {
+  background-color: var(--play-col-mainbg1);
+  width: 100%;
+}
+
+@media screen and (max-width: 512px) {
+  .gginfo-it-grp { 
+    width: 100%;
+  }
+}
+
+.gginfo-it-grp svg {
+  max-width: 1.5em;
+  max-height: 1.5em;
+  padding-top: 0.25em;
+}
+
+.gginfo-it-grp tr {
+  background-color: var(--play-col-mainbg2);
+}
+
+.gginfo-it-grp tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.brd-gameinfo-fr.isfixed.isopen .gginfo-it-grp {
+  width: auto;
+  height: auto;
+}
+
+
+.mapfr.full .gginfofr.gginfofxd .gginfo-it-grp .isnotfixed{ 
+  display: none;
+}
+
+.mapfr.full .gginfofr.gginfofxd .isnotfixed { 
+  display: none;
+}
+
+.gginfo-hdr {
+  min-width: 14em;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-family: 'Noto Serif';
+  background-color: var(--play-col-btn1);
+  transition: 0.35s background-color;
+  color: var(--play-col-maincol1);
+}
+
+.gginfo-hdr:hover {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+}
+
+.gginfo-link {
+  transition: 0.7s background-color;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  outline: 1px solid var(--play-col-btn1);
+  text-decoration: none;
+  color: var(--play-col-maincol1);
+  line-height: 1.5;
+}
+
+.gginfo-link:hover, .gginfo-link:focus {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+}
+
+
+.gginfo-td-now svg {
+  fill: var(--play-col-maincol2);
+}
+
+.gginfofr .gginfo-it-grp td.gginfo-item-inset {
+  text-align: right;
+  padding-right: 1.25em;
+}
+
+.gginfo-it-name {
+
+}
+.brd-gameaction-message-icon-fr.cta .icon-actionneeded
+.gginfo-it-name {
+
+}
+
+.gginfo-it-variant {
+
+}
+
+.gginfo-it-gt {
+
+}
+
+.gginfo-hdr-btn {
+  width: 100%;
+  background-color: transparent;
+  color: inherit;
+  font-style: italic;
+}
+
+.gginfo-hdr-btn:hover {
+
+}

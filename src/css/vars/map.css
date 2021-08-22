@@ -1,0 +1,25 @@
+:root {
+  --play-col-mapland: var(--light-col-mapland);
+  --play-col-mapwater: var(--light-col-mapwater);
+
+  --play-col-mapbordercolor: var(--dark-col-mapbordercolor);
+
+  --play-col-mapborderwidth: var(--light-col-mapborderwidth);
+
+  --play-col-mapbg: var(--light-col-mapbg);
+
+  --light-col-mapland: rgba(121, 85, 72, 1);
+  --dark-col-mapland: rgba(12, 9, 7, 1);
+
+  --light-col-mapwater: rgba(90, 90, 233, 1);
+  --dark-col-mapwater: rgba(1, 1, 65, 1);;
+
+  --light-col-mapbordercolor: rgba(25, 24, 24, 0.4);
+  --dark-col-mapbordercolor: rgba(9,221,70,1);
+  
+  --light-col-mapborderwidth: 3;
+  --dark-col-mapborderwidth: 1;
+
+  --light-col-mapbg: rgb(250, 250, 250, 1);
+  --dark-col-mapbg: rgba(50, 49 ,49 , 1);
+}

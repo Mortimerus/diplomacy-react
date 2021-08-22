@@ -1,0 +1,179 @@
+.frm-gm-create-game {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  width: 33em;
+  background-color: var(--play-col-mainbg1);
+}
+
+.frm-gm-create-game fieldset {
+  border: none;
+  padding: 0;
+  margin-top: 0.25em;
+}
+
+.frm-gm-create-game label {
+  display: block;
+}
+
+.frm-gm-label-span {
+  width: 100%;
+  display: inline-block;
+}
+
+.frm-gm-create-game-group {
+  background-color: var(--play-col-mainbg2);
+}
+
+.frm-gm-create-game-group select {
+  background-color: var(--play-col-mainbg2);
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+  border: none;
+  color: var(--play-col-maincol1);
+  padding: 0.25em;
+}
+
+.frm-gm-create-game-group.subm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.frm-gm-create-game-group.subm input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frm-gm-create-game-group.subm input:disabled {
+  outline: 1px solid var(--play-col-sig1);
+}
+
+.frm-gm-create-game-group.subm input:enabled {
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+  background-color: var(--play-col-mainbg2);
+}
+
+.frm-gm-create-game-group.subm input:enabled:hover {
+  cursor: pointer;
+  outline: 1px solid rgba(86, 208, 86, 0.7);
+}
+
+.frm-gm-create-game-group button {
+  width: 3em;
+  height: 3em;
+  background-color: transparent;
+  transform: rotate(-90deg) scale(0.75);
+  transition-duration: 0.2s;
+  margin-left: 2em;
+}
+
+.frm-gm-create-game-group button.isopen {
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
+}
+
+.frm-gm-create-game-group legend {
+  display: block;
+  padding-left: 1em;
+  width: 100%;
+  background-color: var(--play-col-mainbg2);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1.25rem;
+}
+
+.frm-gm-create-game-group legend span {
+  background-color: var(--play-col-mainbg3);
+  display: block;
+  width: 100%;
+  padding: 0.25em;
+}
+
+.frm-gm-create-game-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0.75em;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 33em) {
+  .frm-gm-create-game-group label {
+    padding-left: 2em;
+  }
+}
+
+.frm-gm-create-game-group label input {
+  padding-right: 0.5em;
+  background-color: var(--play-col-mainbg1);
+  border: none;
+  height: 1.25em;
+  font-size: 1.25rem;
+  padding: 0.25em;
+  color: var(--play-col-maincol1);
+}
+
+.frm-gm-create-game-group label input[type='submit'] {
+  width: 7em;
+  margin: 0.5em;
+  padding: 1em;
+  text-align: center;
+}
+
+.frm-gm-create-game-group label input[type='checkbox'] {
+  width: 2em;
+}
+
+.frm-gm-create-game-group label input[type='text'],
+.frm-gm-create-game-group label input[type='number'] {
+  outline: 1px solid var(--play-col-sig1);
+  width: 8em;
+}
+
+@media screen and (min-width: 768px) {
+  .frm-gm-create-game-group label input[type='text'],
+.frm-gm-create-game-group label input[type='number'] {
+  width: auto;
+  text-align: center;
+}
+}
+
+
+
+.frm-gm-create-game-group label input.isok {
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+  background-color: var(--play-col-mainbg2);
+}
+
+.frm-gm-create-game-group label span {
+  padding: 0.25em;
+}
+.frm-gm-create-game-group label span.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.frm-gm-create-game-toplegend {
+  font-size: 2em;
+  display: block;
+  width: 100%;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: var(--play-col-mainbg2);
+}
+
+.frm-gm-create-game-toplegend span {
+  width: 100%;
+  display: inline-block;
+  padding: 0.25em;
+  background-color: var(--play-col-mainbg3);
+}
+
+
+
+.crgana-toolong {
+
+}

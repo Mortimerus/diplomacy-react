@@ -1,0 +1,39 @@
+.pldtls-tbl {
+  background-color: var(--play-col-mainbg2);
+  border-spacing: 0.25em;
+  padding: 1em;
+  font-size: 1.125em;
+}
+
+.pldtls-tbl .tr1 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.pldtls-tbl .tr2 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.pldtls-tbl td {
+  padding: 0.5em;
+}
+
+.pldtls-tbl td.tdcntr{
+  text-align: center;
+}
+
+.pldtls-tbl .islink a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.25em;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+  background-color: var(--play-col-btn1);
+  transition: 0.35s background-color;
+  display: inline-block;
+}
+
+.pldtls-tbl .islink a:hover {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg2);
+}

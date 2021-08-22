@@ -1,0 +1,17 @@
+.unit {
+  pointer-events: none;
+  filter: url(#unitlight) drop-shadow(2px 2px 2px black);
+  transform: scale(1);
+  transition-duration: 0.6s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.unit.blow {
+  transform: scale(1.6);
+}
+
+/*
+  filter: url(#unitlight) url(#unitshadow);
+  filter: saturate(1) url(#unitlight) url(#unitshadow);
+*/

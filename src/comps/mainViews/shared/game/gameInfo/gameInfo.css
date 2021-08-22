@@ -1,0 +1,105 @@
+.brd-gameinfo-fr.isfixed {
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  height: 0;
+  width: 0;
+  transition: right 0.3s;
+  opacity: 0;
+  margin: 4px;
+}
+
+.brd-gameinfo-fr.isnotfixed {
+  position: static;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  margin-bottom: 0.25em;
+}
+
+.brd-gameinfo-fr.isfixed.isopen {
+  height: 0;
+  width: 0;
+  bottom: 8px;
+  right: 60px;
+  background-color: var(--play-col-mainbg2);
+  color: var(--play-col-maincol1);
+  opacity: 1;
+  display: block;
+}
+
+.brd-gameinfo-btn-fullview {
+  display: none;
+}
+
+.brd-gameinfo-btn-fullview.isfixed {
+  display: block;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  opacity: 1;
+  z-index: 33;
+}
+
+.brd-gameinfo-menu-btn-gr {
+  transition-duration: 0s;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0) translateY(150px);
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+}
+
+.brd-gameinfo-btn-fullview.isfixed button .icon-info {
+  fill: var(--play-col-maincol2);
+  width: 2.5em;
+  height: 2.5em;
+  transition-duration: 0.2s;
+}
+
+.brd-gameinfo-btn-open {
+  background-color: transparent;
+}
+
+.brd-gameinfo-btn-fullview.isfixed button .icon-info:hover {
+  transform: scale(1.2);
+}
+
+.brd-gameinfo-btn-fullview.isfixed button {
+  opacity: 1;
+  background-color: var(--play-col-btn1);
+}
+
+.brd-gameinfo-menu-btn-gr.isopen {
+  transition-duration: 0.2s;
+  height: auto;
+  width: auto;
+  bottom: 55px;
+  right: 8px;
+  transform: scale(1) translateY(0px);
+}
+
+
+.brd-gameinfo-btn-fullview.isfixed .brd-gameinfo-menu-btn-gr button {
+  width: 47px;
+  height: 47px;
+}
+
+.brd-gameinfo-btn-fullview.isfixed .brd-gameinfo-btn-open {
+  background-color: transparent;
+}
+
+.brd-gameinfo-btn-fullview.isfixed .brd-gameinfo-btn-open.isactive .icon-info {
+  width: 2em;
+  height: 2em;
+  transform: scale(1);
+  filter: none;
+}
+
+.gamectrls-fr .brd-gameinfo-fr.isfixed.isopen {
+  position: fixed;
+    width: 0px;
+    height: 0px;
+    overflow: visible;
+}

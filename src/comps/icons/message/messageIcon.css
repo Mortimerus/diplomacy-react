@@ -1,0 +1,13 @@
+.icon-messages-fr {
+  height: 2em;
+  width: 2em;
+  pointer-events: none;
+}
+
+button.btn-tmode .icon-messages-fr {
+  fill: var(--play-col-mainbg1);
+}
+
+button .icon-messages-fr {
+  fill: var(--play-col-maincol2);
+}

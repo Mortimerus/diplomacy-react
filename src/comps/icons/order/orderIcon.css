@@ -1,0 +1,12 @@
+.icon-orders-fr {
+  width: 2em;
+  height: 2em;
+  fill: var(--play-col-mainbg3);
+}
+
+.isfixed.btn-submorders {
+}
+
+.btn-submorders {
+  background-color: var(--play-col-sig2);
+}

@@ -1,0 +1,162 @@
+.boardview .frmfr {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  z-index: 44;
+}
+
+.frmlogin {
+  border: none;
+}
+
+.frmlogin fieldset {
+  border: none;
+  padding: none;
+}
+.frmlogin input {
+  height: 2.75em;
+  text-align: center;
+  margin: 0 3px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 512px) {
+  .frmlogin input[type=submit] {
+    width: 6em;
+  }
+
+
+}
+
+@media screen and (max-width: 511px) {
+  .frmlogin input {
+    margin-bottom: 0.425em;
+  }  
+}
+
+.frmlogin input[type=submit] {
+  line-height: normal;
+}
+
+/*
+.frmlogin input[type=submit]:disabled {
+  background-color: var(--play-col-mainbg3);
+  color: var(--play-col-maincol2);
+  line-height: normal;
+  border: 1px solid var(--dark-col-btn1);
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+*/
+
+.boardview .frmlogin input, .boardview .frmlogin input[type=submit] {
+  height: 1.75em;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 1.75em;
+  margin-bottom: 6px;
+  box-shadow: 2px 2px 2px 0px rgb(0, 0, 0, 0.2);
+  border: none;
+  color: var(--play-col-maincol1);
+
+}
+
+.sgnpinpbrdvw {
+  display: none;
+}
+
+.boardview .sgnpinpbrdvw {
+  display: block;
+  background-color: var(--play-col-mainbg2);
+  opacity: 0.8;
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+}
+
+.boardview .sgnpinpbrdvw:hover {
+  background-color: var(--play-col-mainbg3);
+  color: var(--play-col-maincol1);
+  outline: 1px solid rgba(86, 208, 86, 0.7);
+  opacity: 2;
+}
+
+.boardview .frmlogin {
+  background-color: var(--play-col-mainbg2);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  border: 1px solid var(--play-col-mainbg3);
+}
+
+.gamefr .frmlogin fieldset {
+  padding: 2vmax;
+}
+
+/*
+.boardview .loginsubm, .boardview input.loginsubm:enabled {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+  opacity: 0.8;
+  cursor: pointer;
+}
+*/
+/*
+.boardview .loginsubm:hover, .boardview input.loginsubm:enabled:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+*/
+/*
+.boardview .loginsubm:disabled {
+  background-color: var(--play-col-btn1);
+  opacity: 0.4;
+}
+*/
+
+.loader-frame {
+  width: 95vw;
+  height: 95vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginsubm {
+  opacity: 0.8;
+}
+
+.loginsubm.isok {
+  opacity: 1;
+}
+
+.loginsubm.isok:hover {
+  opacity: 1;
+  outline: 1px solid rgba(86, 208, 86, 0.7); 
+  cursor: pointer;
+  background-color: var(--play-col-mainbg3);
+}
+
+#loginpass, #loginusername, .loginsubm {
+  background-color: var(--play-col-mainbg1);
+  outline: 1px solid var(--play-col-sig1);
+  opacity: 0.8;
+  color: var(--play-col-maincol1);
+}
+
+#loginpass:focus, #loginusername:focus, .loginsubm:focus {
+  background-color: var(--play-col-mainbg2);
+  outline: 1px solid var(--play-col-sig1);
+  opacity: 1;
+}
+
+#loginpass.isok, #loginusername.isok, .loginsubm.isok {
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+  background-color: var(--play-col-mainbg2);
+  opacity: 1;
+}
+
+.loginsubm:disabled {
+  opacity: 0.1;
+}

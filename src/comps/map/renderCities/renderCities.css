@@ -1,0 +1,13 @@
+.mapel-city-circ {
+  fill-opacity: 0.9;
+  pointer-events: none;
+  stroke-width: 1;
+  fill: var(--play-col-maincol1);
+}
+
+.mapel-city-rect {
+  fill-opacity: 0.9;
+  pointer-events: none;
+  stroke-width: 1;
+  fill: var(--play-col-maincol1);
+}

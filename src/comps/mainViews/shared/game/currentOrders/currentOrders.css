@@ -1,0 +1,71 @@
+.ordbox {
+padding: 0.25em;
+}
+
+.curord-li {
+  list-style: none;
+  background-color: var(--play-col-mainbg2);
+}
+
+.curord-li button {
+  display: flex;
+  width: 100%;
+  color: var(--play-col-maincol1);
+  align-items: center;
+  background-color: transparent;
+  transition: 1s background-color;
+  outline: 1px solid transparent;
+  min-height: 2.25em;
+}
+
+.curord-li button:hover, .curord-li button:active, .curord-li button:focus {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg2);
+  outline: 1px solid var(--play-col-sig1);
+  transition: 1s background-color;
+}
+
+.curord-li button:hover .icon-tank, .curord-li button:hover .icon-ship,
+.curord-li button:focus .icon-tank, .curord-li button:focus .icon-ship
+.curord-li button:active .icon-tank, .curord-li button:active .icon-ship
+{
+  fill: var(--play-col-mainbg2);
+}
+
+.icon-ship, .icon-tank {
+  fill: var(--play-col-maincol2);
+}
+
+.curord-li .curord-li-icon .icon-tank, .curord-li .curord-li-icon .icon-ship {
+  width: 1.125em;
+  height: 1.125em;
+  text-align: center;
+  margin-left: 0.25em;
+}
+
+.curord-li-label {
+  width: 3em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  text-align: center;
+}
+
+.curord-li-lasmall {
+  width: 2em;
+  margin-right: 0.125em;
+  margin-left: 0.125em;
+  text-align: center;
+}
+
+.ordbox .ordbox-ul-hdr-fr {
+  margin-bottom: 0.25em;
+}
+
+.ordbox .ordbox-ul-hdr-fr h3 {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: var(--play-col-maincol1);
+  background-color: var(--play-col-mainbg2);
+  padding: 0.5em;
+  text-align: center;
+}

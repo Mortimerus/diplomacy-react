@@ -1,0 +1,119 @@
+.flexframe {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .flexframe {
+    flex-direction: column;
+  }
+
+  .flexframe fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .isdef .flexframe .sitenavfr {
+    display: none;
+  }
+  .flexframe.iscomm {
+    display: inherit;
+  }
+}
+
+
+
+@media screen and (orientation: landscape) {
+  .boardview .flexframe {
+    margin-top: 3.25em;
+    display: hidden;
+  }
+  .boardview .flexframe.iscomm {
+    margin-top: 0px;
+    display:  block;
+  }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .boardview .gamefr .gamectrls-fr .flexframe.iscomm {
+    display: block;
+  }
+  .boardview .flexframe {
+    display: hidden;
+  }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+  .boardview .flexframe {
+    margin-top: 0;
+  }
+}
+
+.sitenavfr {
+  display: block;
+  margin: 0.125em;
+}
+
+.boardview .sitenavfr {
+  width: 100%;
+}
+
+.sitenavfr:hover {
+  z-index: 9;
+}
+
+.sitenavfr:hover svg {
+  fill: var(--play-col-mainbg2);
+}
+.sitenavul {
+  width: auto;
+  display: flex;
+}
+
+.sitenavul svg {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.opensitenavbtn, .sitenavul li {
+  display: inline-block;
+  border: none;
+  margin-right: 0.25em;
+  margin-bottom: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background-color: var(--play-col-btn1);
+  opacity: 0.8;
+  width: 100%;
+  transition: 0.35s background-color;
+}
+
+.sitenavul li a {
+  height: 35px;
+  display: block;
+  text-decoration: none;
+  color: var(--play-col-maincol1);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  min-width: 3.5em;
+}
+
+.sitenavul li:hover a {
+  color: var(--play-col-mainbg1);
+}
+
+.opensitenavbtn:hover, .sitenavul li:hover {
+  background-color: var(--play-col-sig1);
+}
+
+.boardview .navlink-signup-li {
+  display: none;
+}

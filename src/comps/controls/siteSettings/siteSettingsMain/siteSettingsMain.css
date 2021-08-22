@@ -1,0 +1,203 @@
+.ssmnfr {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  height: 100px;
+  width: 0px;
+  opacity: 0;
+  transition: opacity 0.3s 0.1s;
+  display: table;
+}
+
+@media screen and (min-height: 768px) {
+  .ssmnfr {
+    top: 9px;
+  }
+}
+
+.ssmnfr.ssmnfropen {
+  position: fixed;
+  width: 320px;
+  background-color: var(--play-col-mainbg2);
+  right: 0px;
+  opacity: 1;
+  margin-right: 0px;
+  padding: 0.5em;
+  z-index: 4;
+  border: 4px solid var(--play-col-mainbg3);
+}
+
+@media screen and(min-height: 768px) {
+  .ssmnfr.ssmnfropen {
+    margin-right: 12px;
+  }
+}
+
+.ssmnfr.ssmnfropen.scrl {
+  position: absolute;
+  overflow: scroll;
+}
+
+.ssmnfr .ss3dfr {
+  top: 0px;
+  right: 12px;
+}
+
+@media screen and (min-height: 768px) {
+  .ssmnfr .ss3dfr {
+    top: 11px;
+  } 
+}
+
+.ssmnfr button {
+  display: inline-block;
+  border: none;
+  margin-bottom: 0;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  min-width: 4em;
+  text-align: center;
+  opacity: 0.8;
+  cursor: pointer;
+  border: none;
+  background-color: var(--play-col-btn1);
+  color: var(--play-col-maincol1);
+  font-family: 'Arial';
+}
+
+.ssmnfr .btnactive {
+  opacity: 0.83;
+  background-color: var(--play-col-btn2);
+  color: var(--play-col-mainbg1);
+}
+
+.ssmnfr .btnattention {
+  background-color: var(--play-col-sig2);
+  color: var(--play-col-mainbg1);
+}
+
+
+.ssmnfr.ssmnfropen .ss3dfr button .ss3d.btnactive {
+  background-color: var(--play-col-sig2)
+}
+
+.ssmnfr.ssmnfropen button:hover {
+  opacity: 1;
+  background-color: var(--play-col-btn2);
+  color: var(--play-col-mainbg2);
+
+}
+
+.ssmnfr.ssmnfropen button:active {
+  opacity: 1;
+}
+
+.ssmnfr.ssmnfropen .ss3dfr button {
+  background-color: transparent;
+}
+
+.usrnmfr {
+  position: fixed;
+  top: 12px;
+  right: 3em;
+}
+
+.ssmn-tbl-fr {
+  margin-bottom: 2em;
+}
+
+.ssmn-tbl-fr table {
+  border-spacing: 0.25em;
+}
+
+.ssmn-tbl-fr table tr {
+  background-color: var(--play-col-mainbg3);
+}
+
+.ssmn-tbl-fr table span {
+  line-height: 1.35;
+}
+
+.ssmn-tbl-fr button {
+  width: 100%;
+  padding: 0.75em;
+  height: 100%;
+}
+
+.ssmn-hdr {
+  text-align: center;
+  margin-top: 0.25em;
+  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.ssmn-acc-tr td {
+  padding: 0.75em;
+  text-align: center;
+  font-weight: 800;
+}
+
+.ssmn-subinfo-fr {
+  border-top: 1px solid var(--play-col-maincol1);
+  padding-top: 1em;
+}
+
+.ssmn-subinfo-fr table {
+  border-spacing: 0.25em;
+}
+
+.ssmn-subinfo-fr table tr {
+  background-color: var(--play-col-mainbg3);
+}
+
+.ssmn-subinfo-fr table tr td {
+  padding: 0.25em;
+}
+
+.ssmn-subinfo-fr table tr td button {
+  margin-bottom: 0px;
+  padding: 0.75em;
+  width: 100%;
+  height: 100%;
+}
+
+.ssmn-subinfo-fr table tr td button:disabled {
+  border: 1px solid var(--glob-col-cta);
+}
+.ssmn-subinfo-fr table tr td button:enabled {
+  border: 1px solid var(--glob-col-ctadone);
+}
+
+.ssmn-subinfo-fr table tr td input {
+  width: 100%;
+  height: 100%;
+  background-color: var(--play-col-mainbg2);
+  border: 1px solid var(--glob-col-cta);
+  padding: 0.5em;
+  text-align: center;
+  outline: none;
+  color: var(--play-col-maincol1);
+  opacity: 0.8;
+}
+
+.ssmn-subinfo-fr table tr td input.hasinput, .ssmn-subinfo-fr table tr td input:focus {
+  background-color: var(--play-col-mainbg3);
+  border: 1px solid var(--glob-col-ctadone);
+  outline: none;
+  opacity: 1; padding: 0.25em;
+}
+
+.ssmn-colcode {
+  border: 1px solid var(--play-col-maincol1);
+  padding: 0.5em;
+  line-break: anywhere;
+  background-color: var(--play-col-mainbg3);
+}
+
+.ssmn-colcode.didcopy {
+  background-color: var(--glob-col-ctadone);
+  opacity: 0.7;
+}

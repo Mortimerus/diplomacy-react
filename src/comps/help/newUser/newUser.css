@@ -1,0 +1,65 @@
+.dash-newuser-fr {
+  overflow: hidden;
+}
+
+.dash-newuser-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--play-col-mainbg1);
+  z-index: 999999;
+}
+
+.dash-newuser-cont {
+  max-width: 38em;
+  background-color: var(--play-col-mainbg2);
+  padding: 1.5em;
+  box-shadow: 0px 0px 12px 0px var(--play-col-maincol2);
+  border-radius: 9px;
+}
+
+.dash-newuser-cont h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5em;
+  border-top: 1px solid;
+  padding-top: 0.5em;
+}
+
+.dash-newuser-cont p {
+  margin-bottom: 1.25em;
+  font-size: 1.25em;
+}
+
+.dash-newuser-cont button {
+  padding: 1em;
+  color: var(--play-col-maincol1);
+  background-color: var(--play-col-mainbg3);
+  outline: 2px solid var(--play-col-maincol2);
+  transition: background-color 0.8s;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0.5em;
+  outline-style: dashed;
+}
+
+.dash-newuser-cont button:hover {
+  background-color: var(--play-col-sig1);
+  outline: 2px solid var(--play-col-sig1);
+  cursor: pointer;
+  color: var(--play-col-mainbg2);
+}
+
+.dash-newuser-btn-fr {
+  display: flex;
+  justify-content: space-evenly;
+}

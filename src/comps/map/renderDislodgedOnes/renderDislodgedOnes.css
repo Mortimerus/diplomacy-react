@@ -1,0 +1,11 @@
+.dislodged {
+  pointer-events: none;
+  filter: saturate(2) drop-shadow(2px 2px 2px white);
+}
+
+.dislcross {
+  stroke-width: 6px;
+  stroke: white;
+  pointer-events: none;
+  opacity: 0.7;
+}

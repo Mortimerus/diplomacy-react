@@ -1,0 +1,25 @@
+const intialSignupState = {
+  pseudo: '',
+  password: '',
+  passwordConfirm: false,
+  passwordMatch: false,
+  passwordStrong: false,
+  email: '',
+  emailValid: false,
+  telephone: '',
+  telephoneValid: false,
+  firstName: '',
+  lastName: '',
+  timeZone: 'UTC+01:00',
+  nationality: 'FRA',
+  residence: 'FRA',
+  waitingForResponse: false,
+  didSignUp: false,
+  verificationCode: 0,
+  countryArr: 0,
+  pseudoWarning: false,
+  formReady: false,
+  errorMessage: 0,
+};
+
+export default intialSignupState;

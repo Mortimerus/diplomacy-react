@@ -1,0 +1,13 @@
+.icon-history-fr {
+  height: 2em;
+  width: 2em;
+  pointer-events: none;
+}
+
+.btn-tmode .icon-history-fr {
+  fill: var(--play-col-mainbg1);
+}
+
+.btn-tmode.disable .icon-history-fr {
+  fill: var(--play-col-maincol2);
+}

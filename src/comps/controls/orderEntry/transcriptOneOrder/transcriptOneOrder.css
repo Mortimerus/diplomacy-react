@@ -1,0 +1,15 @@
+.trscr-oneorder-fr {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.trscr-oneorder-fr span {
+  font-family: monospace;
+  padding-left: 0.25em;
+}
+
+.trscr-oneorder-ital {
+  text-decoration: underline;
+}

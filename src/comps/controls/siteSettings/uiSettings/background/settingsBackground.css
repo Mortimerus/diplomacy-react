@@ -1,0 +1,32 @@
+.bgpattern-fr {
+  padding-top: 1em;
+  border-top: 1px solid var(--play-col-maincol1);
+}
+
+.bgpattern-fr .bgpattern-btn {
+  width: 9em;
+  height: 9em;
+  background-color: var(--play-col-mainbg1);
+  outline: 2px transparent;
+  margin: 2px;
+}
+
+.bgpattern-fr table {
+  width: 100%;
+  border-spacing: 0.25em;
+  margin-bottom: 0.125em;
+}
+
+.bgpattern-fr table td {
+  padding: 0.75em;
+  background-color: var(--play-col-mainbg3);
+  text-align: center;
+}
+
+.ssmnfr.ssmnfropen .bgpattern-fr .bgpattern-btn:hover {
+  outline: 2px var(--play-col-sig1);
+}
+
+.bgpattern-fr table .bgpattern-lab-td {
+  text-align: left;
+}

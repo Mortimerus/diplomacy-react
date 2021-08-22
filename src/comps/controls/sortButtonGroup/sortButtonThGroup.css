@@ -1,0 +1,27 @@
+.th-sortbtn-btn {
+  width: 1em;
+  background-color: var(--play-col-mainbg3);
+  font-weight: 800;
+  font-size: 1.5em;
+  color: var(--play-col-maincol2);
+  padding: 0;
+  margin-top: 0.125em;
+  line-height: 0.8;
+  margin-bottom: 0.125em;
+  transition-duration: 0.5s;
+}
+
+.th-sortbtn-btn:hover {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+}
+
+.th-sortbtn-grp {
+  background-color: var(--play-col-mainbg3);
+  padding: 0.5em;
+}
+
+.th-sortbtn-grp div {
+  display: flex;
+  justify-content: center;
+}

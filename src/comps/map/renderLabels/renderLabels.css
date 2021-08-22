@@ -1,0 +1,7 @@
+.mapel-label {
+  font-weight: 800;
+  font-family: 'Arial';
+  pointer-events: none;
+  fill: var(--play-col-maincol2);
+  fill-opacity: 0.78;
+}

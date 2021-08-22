@@ -1,0 +1,10 @@
+.lgnerrmsgfr {
+  position: absolute;
+  top: 52px;
+  right: 3em;
+  background-color: var(--play-col-mainbg2);
+  border: 2px solid var(--play-col-sig2);
+  padding: 1em;
+  width: 25%;
+  z-index: 3;
+}

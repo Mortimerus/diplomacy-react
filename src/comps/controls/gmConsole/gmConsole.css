@@ -1,0 +1,62 @@
+.gmconsole-btn {
+  color: var(--play-col-mainbg1);
+  padding: 0.5em;
+  min-width: 6em;
+  background-color: var(--play-col-sig1);
+}
+
+.brd-gmconsole-btn.isfixed {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.icon-gamemaster {
+  fill: var(--play-col-btn2);
+}
+
+.brd-gmconsole-btn {
+  transform: scale(1);
+  transition-duration: 0.24s;
+}
+
+.brd-gmconsole-btn.reqaction svg {
+  fill: var(--play-col-sig2);
+}
+
+.brd-gmconsole-btn:hover {
+  transform: scale(1.2);
+}
+
+.brd-gmconsole-fr.isfixed {
+  position: fixed;
+  bottom: 8px;
+  left: 5em;
+  background-color: var(--play-col-mainbg2);
+  min-width: 13em;
+  min-height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brd-gmconsole-fr.isfixed .brd-icn-bg {
+  z-index: -1;
+  position: absolute;
+}
+
+.brd-icn-bg svg {
+  fill: var(--play-col-mainbg3);
+}
+
+.brd-gmconsole-proceeding {
+  padding: 0.75em;
+  background-color: var(--play-col-sig1);
+}
+
+.brd-gmconsole-didproceed {
+  padding: 0.75em;
+  background-color: var(--glob-ctadone);
+}

@@ -1,0 +1,26 @@
+.dath-ctrls-btn {
+  background-color: var(--play-col-btn1);
+  color: var(--play-col-maincol1);
+  font-family: 'Arial';
+  font-size: 1.125em;
+  padding: 0.5em;
+  padding-bottom: 0.25em;
+  min-width: 6em;
+  border-bottom: 0.25em solid var(--play-col-btn1);
+}
+
+.dath-ctrls-btn:hover {
+  background-color: var(--play-col-btn2);
+  color: var(--play-col-mainbg2);
+}
+
+.dath-ctrls-btn.isactive {
+  color: var(--play-col-maincol1);
+  border-bottom: 0.25em solid var(--play-col-btn2);
+}
+
+.dath-ctrls-btn.isactive:hover {
+  opacity: 1;
+  background-color: var(--play-col-btn2);
+  color: var(--play-col-mainbg1);
+}

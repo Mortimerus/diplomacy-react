@@ -1,0 +1,219 @@
+.signup-fr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  padding: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.signup-frm {
+  background-color: var(--play-col-mainbg1);
+  width: 30em;
+  max-width: 100%;
+}
+
+.signup-frm legend {
+  background-color: var(--play-col-mainbg2);
+  width: 100%;
+  margin-bottom: 0.25em;
+  padding: 1em;
+}
+
+.signup-frm legend h1 {
+  padding: 0.25em;
+  font-size: 2em;
+  background-color: var(--play-col-mainbg3);
+}
+
+.signup-frm fieldset {
+  border: none;
+  padding: 0;
+}
+
+.signup-grp {
+  background-color: var(--play-col-mainbg2);
+  margin-bottom: 0.25em;
+}
+
+.signup-grp legend {
+  text-align: left;
+  padding: 0.25em 1em;
+  font-size: 1.125em;
+}
+
+.signup-grp label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+  margin-left: 3em;
+  margin-bottom: 0.75em;
+  margin-right: 0.5em;
+  font-size: 1.125em;
+}
+
+.signup-grp2 label {
+  display: flex;
+  height: 2em;
+  margin-left: 3em;
+  margin-bottom: 0.75em;
+  margin-right: 0.5em;
+  font-size: 1.125em;
+}
+
+.signup-grp label.rw2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.signup-grp input, .signup-grp select {
+  background-color: var(--play-col-mainbg1);
+  width: 40%;
+  height: 2em;
+  color: var(--play-col-maincol1);
+  opacity: 0.4;
+  outline: 1px solid var(--play-col-sig1);
+  padding: 0.25em;
+  border: none;
+  text-align: center;
+}
+
+.signup-grp input:focus, .signup-grp select:focus {
+  background-color: var(--play-col-mainbg1);
+  opacity: 0.8;
+}
+
+.signup-grp.subm label {
+  justify-content: flex-end;
+  margin-top: 0.75em;
+}
+
+.signup-subm-inp {
+  width: 6em;
+  background-color: var(--play-col-sig1);
+  border: none;
+}
+
+.signup-subm-inp:disabled {
+  opacity: 0.7;
+}
+
+.signup-subm-inp:enabled {
+  background-color: var(--play-col-mainbg2);
+  outline: 2px solid rgba(86, 208, 86, 0.35);
+  opacity: 0.8;
+}
+
+.signup-subm-inp:enabled:hover {
+  background-color: var(--play-col-mainbg3);
+  outline: 2px solid rgba(86, 208, 86, 0.75);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.signup-grp input.isok, .signup-grp select.isok {
+  outline: 1px solid rgba(86, 208, 86, 0.35);
+  background-color: var(--play-col-mainbg2);
+  opacity: 1;
+}
+
+.signup-grp select {
+  background-color: var(--play-col-mainbg2);
+  color: var(--play-col-maincol1);
+  border: none;
+}
+
+.sitenav-su-fr {
+  position: absolute;
+  top: 0;
+  left: 0.75em;
+}
+
+@media screen and (max-width: 65em) {
+  .signup-fr {
+    margin-top: 3em;
+    min-height: 80vh;
+  } 
+}
+
+.signup-itemdtls-fr {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.signup-itemdtls {
+  font-size: 0.75em;
+    margin-top: 0.25em;
+    margin-left: 1.25em;
+}
+
+.signup-verycode-frm {
+  display: flex;
+  justify-content: center;
+  background-color: var(--play-col-mainbg2);
+}
+
+.signup-verycode-frm fieldset {
+  border: none;
+}
+
+.signup-verycode input {
+  min-width: 10em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.signup-verycode legend {
+  padding-top: 1em;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+.signup-verycode-frm .signup-verycode {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+}
+
+.signup-verycode-frm .signup-verycode input {
+  width: 11em;
+  height: 2em;
+  margin-top: 0.5em;
+}
+
+#verysub:disabled {
+  background-color: var(--play-col-mainbg1);
+}
+
+#verysub:enabled {
+  background-color: var(--play-col-mainbg2);
+  outline: 2px solid rgba(86, 208, 86, 0.35);
+}
+
+#verysub:enabled:hover {
+  background-color: var(--play-col-mainbg3);
+  outline: 2px solid rgba(86, 208, 86, 0.75);
+  cursor: pointer;
+}
+
+.signup-verycode.signup-grp .signup-verycode-label {
+  justify-content: flex-end;
+}
+
+.signup-errmsg-fr {
+  background-color: var(--play-col-mainbg2);
+  max-width: 30em;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.signup-errmsg-fr button {
+  width: 11em;
+  background-color: var(--play-col-sig1);
+  margin-top: 0.5em;
+}

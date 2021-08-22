@@ -1,0 +1,133 @@
+.mapel-trns-line {
+  stroke: var(--play-col-maincol1);
+  pointer-Events: none;
+  stroke-opacity: 0.8;
+}
+
+.mapel-trns-polygon {
+  pointer-Events: none;
+  fill-opacity: 0.95;
+  fill: var(--play-col-maincol1);
+}
+
+.mapel-trns-marker {
+  pointer-Events: none;
+}
+
+.mapel-trns-line-suppmove {
+  pointer-Events: none;
+  stroke: orange;
+  stroke-opacity: 0.9;
+  stroke-dasharray: 6 24 6;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2));
+}
+
+.mapel-trns-polygon-suppmove {
+  pointer-Events: none;
+  fill-opacity: 0.7;
+  stroke-dasharray: 6 24 6;
+}
+
+.mapel-trns-marker-suppmove {
+  fill: orange;
+  pointer-Events: none;
+  fill-opacity: 0.9;
+  stroke-dasharray: 6 24 6;
+}
+
+.mapel-trns-hold {
+  stroke: var(--play-col-maincol1);
+}
+
+.mapel-trns-line-hold {
+  stroke: orange;
+  pointer-Events: none;
+  stroke-opacity: 0.9;
+  fill-opacity: 0.9;
+  stroke-dasharray: 12 12;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+
+.mapel-trns-line-conv {
+  pointer-Events: none;
+  stroke: blue;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 18 24;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.mapel-trns-polygon-conv {
+  pointer-Events: none;
+  fill-opacity: 0.7;
+  stroke-dasharray: 18 24;
+}
+
+.mapel-trns-marker-conv {
+  fill: blue;
+  pointer-Events: none;
+  fill-opacity: 0.7;
+  stroke-dasharray: 18 24;
+}
+
+.mapel-trns-line-retreat {
+  pointer-Events: none;
+  stroke: white;
+  stroke-opacity: 0.9;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.mapel-trns-polygon-retreat {
+  pointer-Events: none;
+  fill-opacity: 0.9;
+  stroke-dasharray: 18 24;
+}
+
+.mapel-trns-marker-retreat {
+  fill: white;
+  pointer-Events: none;
+  fill-opacity: 0.9;
+  stroke-dasharray: 18 24;
+}
+
+
+
+.mapel-trns-build-fleet {
+  filter: grayscale(0.3);
+  stroke: white;
+  stroke-width: 4px;
+  stroke-dasharray: 6 6;
+  pointer-Events: none;
+}
+
+.mapel-trns-build-army {
+  filter: grayscale(0.3);
+  stroke: white;
+  stroke-width: 4px;
+  stroke-dasharray: 6 6;
+  pointer-Events: none;
+}
+
+.mapel-trns-sack {
+  stroke: red;
+  stroke-width: 8px;
+  filter: drop-shadow(1px 1px 1px black);
+  pointer-Events: none;
+}
+
+.mapel-trns-hold, .mapel-trns-sack, .mapel-trns-build-army,
+.mapel-trns-build-fleet, 
+.mapel-trns-retreat, .mapel-trns-move, .mapel-trns-suphold,
+.mapel-trns-supmove, .mapel-trns-conv
+{
+  transform: scale(1);
+  transition-duration: 0.6s;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.blow {
+  transition-duration: 0.3s;
+  transform: scale(1.03);
+  filter: drop-shadow(0px 0px 12px var(--play-col-maincol1));
+}

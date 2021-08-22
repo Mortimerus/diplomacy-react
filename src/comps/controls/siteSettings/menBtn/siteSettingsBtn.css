@@ -1,0 +1,42 @@
+.ss3dfr {
+  position: fixed;
+  top: 0px;
+  right: 12px;
+  width: 21px;
+  z-index: 4;
+}
+
+@media screen and (min-height: 768px) {
+  .ss3dfr {
+    top: 12px;
+  }
+}
+
+.ss3dfr:hover .ss3d {
+  border-radius: 0;
+  background-color: var(--play-col-sig1);
+}
+
+.ss3dfr button {
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.ss3d {
+  transition-duration: 0.2s;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--play-col-maincol2);
+  margin-top: 3px;
+  outline: none;
+  border: none;
+}
+
+.ss3dfr button:active .ss3d {
+  margin-left: -4px;
+  width: 14px;
+}

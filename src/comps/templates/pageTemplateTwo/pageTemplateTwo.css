@@ -1,0 +1,16 @@
+@media screen and (min-width: 512px) {
+  .pt2-fr {
+    padding-left: 0.75em;
+  }  
+}
+
+.pt2-fr {
+  min-height: 100vh;
+}
+
+.pt2-cont {
+  min-height: calc(100vh - 51px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

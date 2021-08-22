@@ -1,0 +1,16 @@
+.sshelp-fr {
+  border-top: 1px solid var(--play-col-maincol1);
+  padding-top: 1em;
+}
+
+.sshelp-fr table {
+  width: 100%;
+}
+
+.sshelp-fr table td {
+  background-color: var(--play-col-mainbg3);
+}
+
+.sshelp-fr table td button {
+  padding: 0.75em;
+}

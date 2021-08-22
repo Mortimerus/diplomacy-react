@@ -1,0 +1,13 @@
+.icon-split-fr {
+  height: 2em;
+  width: 2em;
+  pointer-events: none;
+} 
+
+button.btn-tmode .icon-split-fr {
+  fill: var(--play-col-mainbg1);
+}
+
+button .icon-split-fr {
+  fill: var(--play-col-maincol2);
+}

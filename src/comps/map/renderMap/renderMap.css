@@ -1,0 +1,94 @@
+.area {
+  stroke: var(--play-col-mapbordercolor);
+  stroke-width: var(--play-col-mapborderwidth);
+  transition-duration: 0.7s;
+  transition-property: fill;
+  stroke-opacity: 0.7;
+  filter: url(#zonelight);
+  fill-opacity: 0.15;
+}
+
+.area:hover {
+  stroke-width: calc(var(--play-col-mapborderwidth)*1.5);
+  stroke-opacity: 0.6;
+  fill-opacity: 0.3;
+  filter: none;
+  cursor: inherit;
+}
+
+.area.isactive, .area.isactive:hover {
+  stroke-width: calc(var(--play-col-mapborderwidth)*1.5);
+  fill-opacity: 0.39;
+  filter: drop-shadow(4px 4px 4px rgba(1,1,1,0.4)) url(#zonelight);
+  stroke-opacity: 0.6;
+  stroke-width: calc(var(--play-col-mapborderwidth)*0.5);
+}
+
+.currzinfo .area:hover {
+  cursor: help;
+}
+
+.currzinfo.dispzinfo .area:hover {
+  cursor: pointer;
+}
+.currzinfo.enterords .area:hover {
+  cursor: crosshair;
+}
+
+
+
+
+/* highlighting zones on click
+filter: url(#zonelight) saturate(1) drop-shadow(5px 6px 7px black);
+  filter: drop-shadow(4px 4px 4px var(--play-col-maincol1));
+*/
+
+.land {
+  fill: var(--play-col-mapland);
+}
+
+.water {
+  fill: var(--play-col-mapwater);
+}
+
+svg text {
+  pointer-events: none;
+}
+
+.mapsvg {
+  background-color: var(--play-col-mapbg);
+}
+
+.mapfr .mapsvg {
+
+}
+
+@media screen and (orientation: landscape) {
+  .mapfr.comm .mapsvg  {
+    height: 0vmax;
+    /* transform: rotateX(45deg) translateY(-21%); */
+  }
+  
+  .mapfr.default .mapsvg  {
+    height: 100vmin;
+    /* transform: rotateX(0deg) translateY(0%); */
+  }
+  
+  .mapfr.full .mapsvg  {
+    width: 100vw;
+    /* transform: rotateX(28deg) translateY(-3%); */
+  }
+}
+@media screen and (orientation: portrait) {
+  .mapfr.comm .mapsvg  {
+    width: 0vmax;
+  }
+  
+  .mapfr.default .mapsvg  {
+    width: 100vmin;
+  }
+  
+  .mapfr.full .mapsvg  {
+    height: 100vh;
+  }
+}

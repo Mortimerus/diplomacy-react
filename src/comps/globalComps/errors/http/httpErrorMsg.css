@@ -1,0 +1,26 @@
+.httperrmsgfr {
+  background-color: var(--play-col-mainbg3);
+  position: absolute;
+  right: 50%;
+  top: 5%;
+  border: 2px solid var(--play-col-sig1);
+  padding: 1em;
+  font-family: monospace;
+  z-index: 3;
+}
+
+.httperrmsgfr ul {
+  list-style: none;
+}
+
+.httperrmsgfr ul li {
+  margin-bottom: .5em;
+}
+
+.httperrmsgfr button {
+  background-color: var(--play-col-sig2);
+  padding: 1em;
+  border: none;
+  border-radius: 4px;
+  float: right;
+}

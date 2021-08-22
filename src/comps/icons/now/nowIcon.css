@@ -1,0 +1,14 @@
+.icon-now-fr {
+  height: 1.75em;
+  width: 1.75em;
+  pointer-events: none;
+  margin-bottom: 2px;
+}
+
+.btn-tmode .icon-now-fr {
+  fill: var(--play-col-mainbg1);
+}
+
+.btn-tmode.disable .icon-now-fr {
+  fill: var(--play-col-maincol2);
+}

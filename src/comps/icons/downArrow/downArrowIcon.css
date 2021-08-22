@@ -1,0 +1,6 @@
+.icon-downarrow {
+  width: 2em;
+  height: 2em;
+  fill: var(--play-col-maincol2);
+  pointer-events: none;
+}

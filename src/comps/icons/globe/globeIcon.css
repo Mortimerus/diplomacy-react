@@ -1,0 +1,13 @@
+.icon-globe-fr {
+  width: 2em;
+  height: 2em;
+  pointer-events: none;
+}
+
+button.btn-tmode .icon-globe-fr {
+  fill: var(--play-col-mainbg1);
+}
+
+button .icon-globe-fr {
+  fill: var(--play-col-maincol2);
+}

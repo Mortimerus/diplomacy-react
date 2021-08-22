@@ -1,0 +1,39 @@
+.tbl-games tr td {
+  padding: 0.5em;
+  text-align: center;
+}
+
+.tbl-games {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--play-col-mainbg1);
+}
+
+@media screen and (min-width: 768px) {
+  .tbl-games {
+    margin-top: 3em;
+  }
+}
+
+.tbl-games thead {
+  height: 3em;
+  background-color: var(--play-col-mainbg1);
+}
+
+.tbl-games tr.tr1 {
+  background-color: var(--play-col-mainbg2);
+}
+
+.tbl-games tr.tr2 {
+  background-color: var(--play-col-mainbg3);
+}
+
+.games-btn-subscribe {
+  background-color: var(--play-col-sig1);
+  font-weight: 800;
+  font-size: 1.125em;
+}
+
+.gameslist-th-link{
+  background-color: var(--play-col-mainbg3);
+}

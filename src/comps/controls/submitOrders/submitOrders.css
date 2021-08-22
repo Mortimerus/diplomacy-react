@@ -1,0 +1,272 @@
+.btn-submorders {
+  background-color: var(--play-col-sig1);
+  display: block;
+  width: 100%;
+    margin-top: 0.25em;
+    font-size: 1.125em;
+    padding: 0.5em;
+    outline: 1px solid var(--play-col-sig1);
+    transition: background-color 0.3s;
+}
+
+.btn-submorders.sending {
+}
+
+.btn-submorders:hover {
+  background-color: var(--glob-col-cta);
+  color: var(--play-col-maincol1);
+  outline: 1px solid var(--glob-col-cta);
+}
+
+.brd-gameaction-message.subm {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderr-fr {
+  display: flex;
+  background-color: var(--play-col-mainbg2);
+  padding: 0.75em;
+  border: 2px solid var(--play-col-sig1);
+  max-width: 30em;
+  font-size: 1.25em;
+}
+
+.orderr-msg {
+  background-color: var(--play-col-mainbg3);
+  padding: 0.25em;
+}
+
+.orderr-btn {
+  background-color: var(--play-col-sig1);
+  padding: 1.5em;
+}
+
+.brd-gameaction-btn-oc {
+ background-color: transparent;
+ fill: var(--play-col-maincol2);
+ transition-duration: 0.3s;
+ transform: scale(1);
+}
+
+.brd-gameaction-btn-oc:hover {
+  transform: scale(1.3);
+}
+
+.brd-gameaction-btn-oc.done svg {
+  fill: green;
+}
+
+.brd-gameaction-btn-oc.reqaction svg {
+  fill: var(--play-col-sig2);
+}
+
+.brd-isfull .brd-gameaction-mn-fr {
+  max-height: 0vh;
+}
+
+.brd-gameaction-mn-fr {
+  background-color: var(--play-col-mainbg1);
+}
+
+@media screen and (max-width: 512px) {
+  .brd-gameaction-mn-fr {
+    width: 100%;
+  }
+}
+
+/* START MAIN */
+
+.brd-gameaction-mn-fr.isfixed {
+  position: fixed;
+  bottom: 12px;
+  left: 60px;
+  display: block;
+  /*
+  display: flex;
+  */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*
+  min-height: 8em;
+  */
+
+  max-width: 25em;
+  background-color: var(--play-col-mainbg1);
+  max-height: 85vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--play-col-maincol2) var(--play-col-mainbg2);
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .brd-gameaction-mn-fr.isfixed {
+    max-width: 39vw;
+  }
+}
+
+.brd-gameaction-mn-fr.isfixed::-webkit-scrollbar {
+  width: 3px;
+}
+
+.brd-gameaction-mn-fr.isfixed::-webkit-scrollbar-thumb {
+  background-color: var(--play-col-mainbg1) ;
+  border-radius: 6px;
+  border: 3px solid var(--play-col-sig1);
+}
+
+.brd-gameaction-mn-fr .brd-gameaction-message {
+  margin: 0 0.25em;
+  min-width: 12em;
+}
+
+.brd-gameaction-mn-fr .brd-gameaction-message div {
+  font-size: 1.125rem;
+  text-align: center;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s background-color;
+}
+
+.brd-gameaction-mn-fr .brd-gameaction-message:hover div {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+}
+
+.brd-gameaction-mn-fr .brd-gameaction-message.ctadone:hover div {
+  background-color: var(--play-col-sig1);
+  color: var(--play-col-mainbg1);
+}
+
+@keyframes buildup {
+  0% { 
+    margin-top: -5em;
+    opacity: 0.2;
+  }
+  50% { 
+    margin-top: -5em;
+    opacity: 0.875;
+  }
+  100% {
+    margin-top: 0.5em;
+    opacity: 1;
+  }
+}
+
+.brd-isfull .brd-gameaction-mn-fr {
+  display: none;
+}
+
+.brd-isfull .brd-gameaction-mn-fr.isfixed {
+  display: block;
+  padding: 0em 0.125em 0.25em 0.125em;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 3px rgba(0,0,0,0.07);
+}
+
+.brd-gameaction-mn-fr.isfixed .brd-gameaction-grp {
+  margin-top: 0.5em;
+}
+
+/* @media screen and (min-height: 512px) { */
+  .brd-isfull .brd-gameaction-mn-fr.isfixed .brd-gameaction-grp {
+    animation-name: buildup;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+/* } */
+
+.brd-gameaction-grp.brd-gameaction-subm {
+  z-index: 9999;
+  bottom: 9px;
+  background-color: var(--play-col-mainbg2);
+  width: 100%;
+}
+
+.btn-submorders.sending .loader {
+  font-size: 0.25em;
+  margin: 0px auto;
+  opacity: 0.8;
+  background-color: var(--play-col-maincol2);
+  max-height: 4em;
+}
+
+.btn-submorders.sending .loader:before,
+.btn-submorders.sending .loader::after {
+
+}
+
+.brd-gameaction-mesbackground-color svg {
+  height: 1.125em;
+  width: 1.125em;
+  margin-left: 1.25em;
+  fill: var(--play-col-btn1);
+}
+.brd-gameaction-message-icon-fr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brd-gameaction-message-icon-fr.nocta, .brd-gameaction-message-icon-fr.nocta:hover {
+  background-color: var(--glob-col-ctadone);
+  color: var(--play-col-maincol1);
+}
+
+.brd-gameaction-message-icon-fr.nocta:hover svg {
+  fill: var(--play-col-mainbg2);
+}
+
+.brd-gameaction-message-icon-fr.nocta:hover div {
+  background-color: var(--glob-col-ctadone);
+  color: var(--play-col-maincol1);
+}
+
+.brd-gameaction-message-icon-fr.nocta svg {
+  height: 1.25em;
+  width: 1.25em;
+  fill: var(--play-col-maincol1);
+  margin-left: 0.5em;
+}
+
+.brd-gameaction-message-icon-fr.cta {
+  background-color: var(--glob-col-cta);
+  color: var(--play-col-maincol1);
+  transition: 0.35s background-color;
+}
+
+.brd-gameaction-message-icon-fr.cta .icon-actionneeded {
+  height: 1.25em;
+  width: 1.25em;
+  margin-left: 0.75em;
+}
+
+.brd-gameaction-message-icon-fr.cta:hover .icon-actionneeded {
+  fill: var(--play-col-mainbg2);
+}
+
+.brd-gameaction-message-icon-fr.cta:hover {
+   background-color: var(--play-col-sig1);
+   color: var(--play-col-mainbg2);
+}
+
+.brd-gameaction-hdr-btn {
+  background-color: var(--play-col-btn1);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--play-col-maincol1);
+}
+
+.brd-gameaction-message.noint div, .brd-gameaction-message.noint:hover div {
+  background-color: var(--play-col-mainbg2);
+  color: inherit;
+}
+
+.brd-gameaction-message.noint div svg, .brd-gameaction-message.noint:hover div svg {
+  fill: var(--play-col-maincol2);
+}

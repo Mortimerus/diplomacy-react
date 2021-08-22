@@ -1,0 +1,56 @@
+.mapcont-adj {
+  display: flex;
+  align-items: center;
+}
+
+.mapfr.full::-webkit-scrollbar
+{
+display: none;
+}
+
+.mapfr.full .mapsvg::-webkit-scrollbar
+{
+display: none;
+}
+
+
+.boardview::-webkit-scrollbar
+{
+display: none;
+}
+
+.mapresetfullviewbtn {
+  background-color: var(--play-col-sig2);
+}
+
+@media screen and (orientation: landscape) {
+  .mapresetfullviewbtn {
+    position: fixed;
+    z-index: 3;
+    top: 0.425em;
+    right: 3em;
+  }
+}
+/*
+.area.player1 {
+  fill: var(--play-col-player1);
+}
+.area.player2 {
+  fill: var(--play-col-player2);
+}
+.area.player3 {
+  fill: var(--play-col-player3);
+}
+.area.player4 {
+  fill: var(--play-col-player4);
+}
+.area.player5 {
+  fill: var(--play-col-player5);
+}
+.area.player6 {
+  fill: var(--play-col-player6);
+}
+.area.player7 {
+  fill: var(--play-col-player7);
+}
+*/

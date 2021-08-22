@@ -1,0 +1,11 @@
+.uimute-c1.mute {
+  display: none;
+}
+.uimute-c2.mute {
+  display: none;
+}
+
+.btn-orders {
+  width: 7em;
+  background-color: var(--play-col-btn1);
+}
