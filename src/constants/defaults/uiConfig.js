@@ -68,6 +68,7 @@ export const siteSettingsPropsArr = [
 export const supportedLanguagesArr = [
   ['en', 't_014'], // english
   ['de', 't_015'], // german
+  ['fr', 't_236'], // french
   ['dev', 'development'], // development
 ];
 
